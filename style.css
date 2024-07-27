@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero .container{
+    display: flex;
+    border: 1px solid black;
+    gap: 20px;
+    padding: 8px;
+    background-color: rgba(23, 23, 23, 0.5);
+    box-shadow: 8px 15px 15px ;
+    justify-content: space-evenly;
+}
+.box{
+    width: 90px;   
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#id1{
+    background-color:crimson;
+}
+#id2{
+    background-color:burlywood;
+}
+#id3{
+    background-color:cornflowerblue;
+}
+#id4{
+    background-color:violet;
+}
+#id5{
+    background-color:cadetblue;
+}
+h1, h2, h4{
+    font-size: 20px;
+    font-weight: 1000;
+    margin: 13px 0 13px 0;
+}
+p{
+    font-size: 20px;
+    font-weight: 1000;
+    margin: 25px 0 7px 0;
+}
+
+/* @media (min-width: 0px) and (max-width: 449px) */
+/* @media (min-width: 450px) and (max-width: 550px)  */
+/* @media (min-width: 340px) and (max-width: 449px) */
+
+@media (min-width: 550px) and (max-width: 650px) {
+    body section{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .container{
+        display: flex;
+        width: 25rem;
+        gap: 10px;
+        padding: 4px;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: 80px;   
+        height: 80px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 549px) {
+    body section{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .container{
+        gap: 7px;
+        padding: 3px;
+    }
+    .box{
+        width: 70px;   
+        height: 70px;
+    }
+}
+  
+@media (min-width: 340px) and (max-width: 449px) {
+    body section{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .container{
+        width: 20rem;
+        gap: 10px;
+        padding: 4px;
+    }
+    .box{
+        width: 60px;   
+        height: 60px;
+    }
+}
+@media (min-width: 240px) and (max-width: 339px) {
+    body section{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .container{
+        width: 17rem;
+        gap: 8px;
+        padding: 3px;
+    }
+    .box{
+        width: 40px;   
+        height: 40px;
+    }
+}
